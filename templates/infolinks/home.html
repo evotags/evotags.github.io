@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ita" class="pixel-ratio-1 watch-active-state">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <title>SyncTag - InfoLink Template</title> 
+	<link rel="stylesheet" href="css/framework7.ios.min.css">
+	<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+	<link rel="manifest" href="fav/site.webmanifest">
+	<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="apple-mobile-web-app-title" content="SyncTag">
+	<meta name="application-name" content="SyncTag">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body id="body" onload="init();" class="layout-white framework7-root">
+	<div class="statusbar-overlay"></div>
+	<div class="views tabs navbar-through toolbar-through">
+		<div id="tab-1" class="view view-main tab active">
+			<div class="pages">
+			<div data-page="index" class="page">
+				<div class="page-content pull-to-refresh-content" style="margin-top: -15px;padding-bottom: 0px;" data-ptr-distance="55">
+					<div class="pull-to-refresh-layer">
+						<div class="preloader"></div>
+					</div>
+				<div class="content-block" style="margin: 35px 0px 0px 0px;">
+					<h5 style="margin-bottom:0px;margin-top:-48px;">
+					<script>function clockTick(){currentTime = new Date();day = currentTime.getDate();month = currentTime.getMonth() + 1;year = currentTime.getFullYear();document.getElementById('date').innerHTML=day + "/" + month + "/" + year;}setInterval(function(){clockTick();}, 1000);</script>
+					<div id="date"></div></h5>
+					<h1 class="header" id="banner" style="text-align:left;color:black;margin:0px;font-family:nunito regular">SyncTag©</h1>
+					<div style="margin-top: -58px; width:100%; text-align:right;">
+						Dark  <i class="fas fa-moon"></i>
+						<form id="my-form" class="store-data">
+							<label class="label-switch">
+								<input type="checkbox" name="switch">
+								<div class="checkbox" onclick="toggleTheme();"></div>
+							</label>
+						</form>
+					</div>
+	<div class="hr"></div>
+<!--
+	<div class="content-block">
+		<h5 style="margin-bottom:0px;margin-top:-48px;">
+		<script>function clockTick(){currentTime = new Date();day = currentTime.getDate();month = currentTime.getMonth() + 1;year = currentTime.getFullYear();document.getElementById('date').innerHTML=day + "/" + month + "/" + year;}setInterval(function(){clockTick();}, 1000);</script>
+		<div id="date"></div></h5>
+		<h1 class="header" style="text-align:left;color:black;margin:0px;">SyncTag©</h1>
+		<div style="margin-top: -58px; width:100%; text-align:right;">
+		Dark  <i class="fas fa-moon"></i>
+		<form id="my-form" class="store-data">
+			<label class="label-switch">
+			<input type="checkbox" name="switch">
+			<div class="checkbox" onclick="toggleTheme();"></div>
+			</label>
+		</form>
+		</div>
+	</div>
+-->
+    <div id="logo">
+
+		
+		<img src="img/logo.png" height="200px" width="200px" class="centro">
+		<p class="scritta" style="font-family:nunito regular">Nome</p>
+		<br>
+		<p class="bio" style="font-family:SF Pro Text"><i>Descrizione</i></p>
+	</div>
+	
+    <!--
+	<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	-->
+	
+    <div class="wrap">
+     <div class="item">
+       <a href="link" target="_new"> <img src="img/instagram.png" class="iconcina"></a>
+	   <a href="link" target="_new"> <img src="img/black/facebook.png" class="iconcina"></a>
+	   <a href="link" target="_new"> <img src="img/black/whatsapp.png" class="iconcina"></a>
+	   <a href="link" target="_new"> <img src="img/black/twitter.png" class="iconcina"></a>
+	   <a href="link" target="_new"> <img src="img/black/youtube.png" class="iconcina"></a>
+	   <a href="mailto:synctaginfo@gmail.com""> <img src="img/black/gmail.png" class="iconcina"></a>
+     </div>
+	</div>
+
+	<!--
+	<picture class="ig">
+		<source srcset="img/white/instagram.png" media="(prefers-color-scheme: dark)">
+		<img src="img/black/facebook.png" alt="moving car">
+	</picture>
+	-->
+
+	<div class="wrap">
+		<div class="item">
+			 <a href="link" target="_new" ><button class="btn-outline" style="font-family:SF Pro Text;">Link 1</button></a>
+		</div>
+	</div>
+
+	<div class="wrap">
+		<div class="item">
+			<a href="link" target="_new"><button class="btn-outline" style="font-family:SF Pro Text">Link 2</button></a>
+		</div>
+	</div>
+
+	<div class="wrap">
+		<div class="item">
+			<a href="link" target="_new"><button class="btn-outline" style="font-family:SF Pro Text">Link 3</button></a>
+		</div>
+	</div>
+
+	<div class="wrap">
+		<div class="item">
+			<a href="link" target="_new"><button class="btn-outline" style="font-family:SF Pro Text">Link 4</button></a>
+		</div>
+	</div>
+
+	<!--
+	<div class="wrap">
+		<div class="item">
+			<a href="link" target="_new"><button class="btn-outline">Titolo</button></a>
+		</div>
+	</div>
+	-->	
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/inobounce.min.js"></script>
+	<script type="text/javascript" src="js/synctag.js"></script>
+	<script src="https://kit.fontawesome.com/9518ebfe78.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
