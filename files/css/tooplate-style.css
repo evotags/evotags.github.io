@@ -321,9 +321,11 @@ footer {
 .tm-text-highlight {
   color: white;
 }
+/*
 .tm-text-highlight:hover {
   color: red;
 }
+*/
 .tm-main-content.tm-footer-relative {
   flex-direction: column;
 }
