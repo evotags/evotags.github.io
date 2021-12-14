@@ -1,0 +1,307 @@
+* {
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  display: block;
+}
+
+html:focus {
+  outline: none;
+}
+
+body {
+	/*background-image: url('/.png');*/
+	/*background-color: red;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*height: 200px;*/
+	font-family: "Open Sans", Helvetica, Arial, sans-serif, FontsFree-Net-SFProText-Regular;
+}
+
+.layout-dark .header {
+    color: #fff;
+}
+
+.layout-dark .ig {
+  background: url('img/black/facebook.png');
+}
+
+.section-header {
+  padding: 0px;
+  max-width: 414px;
+  text-align: left;
+}
+
+.hr {
+  margin-top: 10px;
+  background-color: #E5E5EA;
+  width: 100%;
+  height: 1px;
+}
+
+.wrap {display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;    
+    }
+
+.item {padding: 10px;}
+
+#logo {
+	padding: 25px 25px;
+}
+
+.layout-dark .ig {
+  background: url('img/white/instagram.png') no-repeat;
+}
+
+.btn-outline {
+    outline: #000000;
+    /*display: block;*/
+    border: solid 2px #000000;
+	width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background: none;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.layout-dark .btn-outline {
+    outline: whitesmoke;
+    /*display: block;*/
+    border: solid 2px whitesmoke;
+	width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background: none;
+    color:whitesmoke;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*
+.btn-outline-social {
+    outline: #edd27c;
+    display: block;
+    border: solid 0px #edd27c;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 3;
+    padding: 0px 0px;
+    border-radius: 100px;
+    background: none;
+    color: #edd27c;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*/
+
+.iconcina {
+	margin-right: 5px;
+}
+
+.iconcina:hover {
+	transform: scale(1.15) perspective(1px);
+}
+
+.btn-outline:hover, .btn-outline:focus {
+    background: #242424;
+    color: white;
+    outline: whitesmoke;
+    outline-color: whitesmoke;
+}
+
+.layout-dark .btn-outline:hover, .btn-outline:focus {
+    background: whitesmoke;
+    color: #242424;
+    outline: whitesmoke;
+    outline-color: whitesmoke;
+}
+
+.btn-outline:active {
+    background: none;
+    color: #ffffff;
+    outline: whitesmoke;
+}
+
+.btn-outline:visited {
+    background: whitesmoke;
+    color: white;
+    outline-color: whitesmoke;
+}
+
+.centro {
+      display:block;
+      margin:0px auto;
+      text-align:center;
+      padding: 0px 0px 10px 0px;
+    }
+
+.scritta {
+    display:block;
+    margin:0px auto;
+    text-align:center;
+    padding: 0px 0px 0px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.layout-dark .scritta {
+    color: whitesmoke;
+}
+
+.bio {
+ display:block;
+    margin:0px auto;
+    text-align:center;
+    padding: 0px 0px 10px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #242424;
+    font-weight: 540;
+}
+
+.layout-dark .bio {
+    color: whitesmoke;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 0px solid #000000;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.button:hover {
+   background: none;
+    color: whitesmoke;
+    outline: whitesmoke;
+    outline-color: whitesmoke;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 35px;
+  width: 30%;
+  position: relative;
+  transition: all 0,3s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 00;
+  color: #000;;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.popup .close:hover {
+  color: #fff;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+.content {
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+   .btn-outline{ 
+      /*display:flex;*/
+      margin:10px auto;
+      text-align:center;
+      padding: 10px 10px 10px 10px;
+      font-size: 20px;
+   }
+}
+
+form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+label, input[type=text], textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+input[type=text], textarea {
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: #1c1c1c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
